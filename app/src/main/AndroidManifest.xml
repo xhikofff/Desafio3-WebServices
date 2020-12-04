@@ -11,21 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio3WebServices">
-        <activity android:name=".MainActivity">
-        <activity
-            android:name=".ui.SplashScreen"
-            android:screenOrientation="portrait">
+        <activity android:name=".ui.CapaActivity" />
+        <activity android:name=".ui.HQDetalhesActivity" />
+        <activity android:name=".ui.CadastroActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.LoginActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
-
     </application>
 
 </manifest>

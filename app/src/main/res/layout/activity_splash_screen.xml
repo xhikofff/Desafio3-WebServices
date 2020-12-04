@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.SplashScreen"
-    android:background="@drawable/Raster">
+    android:background="@drawable/spiderman">
 
 
     <ImageView
-        android:id="@+id/ivSplashLogo"
+        android:id="@+id/imageViewSplashLogo"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:scaleType="fitEnd"
