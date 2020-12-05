@@ -18,9 +18,12 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
             viewModelScope.launch {
                 val response = repository.getListaHQs(
                     "1",
+                    "comic",
+                    "true",
+                    "issueNumber",
                     "aa25bbbc2439c9acce70e02378645e05",
                     "ce9c567fa8eaf4c1e27a9ef2a7cb9dc5",
-                    1,
+                    95,
                     10,
                 )
 

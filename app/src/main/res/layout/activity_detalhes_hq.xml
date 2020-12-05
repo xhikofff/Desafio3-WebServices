@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_1"
+    tools:context=".ui.HQDetalhesActivity">
+
+    <ImageView
+        android:id="@+id/imageViewHQDetalhesFundo"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spiderman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradiente_preto_transparente"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewHQDetalhesCapa"
+        android:layout_width="96dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_quadro"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/spiderman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDetalhes" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewHQDetalhesCapa">
+
+        <TextView
+            android:id="@+id/textViewHQDetalhesTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="80dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:maxLines="2"
+            android:text="textViewHQDetalhesTitulo"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHQDetalhesDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="12dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:maxLines="8"
+            android:nestedScrollingEnabled="true"
+            android:text="textViewHQDetalhesDescricao"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewHQDetalhesTitulo" />
+
+        <TextView
+            android:id="@+id/textViewHQDetalhesDataPublicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="textViewHQDetalhesDataPublicacao"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/textViewHQDetalhesPreco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHQDetalhesPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="textViewHQDetalhesPreco"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/textViewHQDetalhesPaginas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHQDetalhesPaginas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="textViewHQDetalhesPaginas"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

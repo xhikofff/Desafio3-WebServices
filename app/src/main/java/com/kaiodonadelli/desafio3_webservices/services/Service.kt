@@ -11,6 +11,9 @@ interface Repository {
     @GET("characters/1009610/comics")
     suspend fun getListaHQs(
         @Query("ts") ts: String,
+        @Query("format") format: String,
+        @Query("noVariants") noVariants: String,
+        @Query("orderBy") orderBy: String,
         @Query("apikey") apikey: String,
         @Query("hash") hash: String,
         @Query("offset") offset: Int,
