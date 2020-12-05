@@ -33,7 +33,7 @@ class HQAdapter(private val context: Context) :
     override fun onBindViewHolder(holder: HQViewHolder, position: Int) {
         val HQ = listaHQs[position]
         holder.textViewHQNum.text =
-            context.getString(R.string.nsa_HQ, HQ.issueNumber)
+            context.getString(R.string.HQ_num, HQ.issueNumber)
         Picasso.get().load(HQ.thumbnail.getFullPath())
             .into(holder.imageViewHQCapa)
 

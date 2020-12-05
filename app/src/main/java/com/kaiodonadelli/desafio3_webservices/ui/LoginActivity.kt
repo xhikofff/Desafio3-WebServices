@@ -13,13 +13,13 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        loginBtnLogin.setOnClickListener {
+        buttonLogin.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
 
 
-        loginTvCreateAccount.setOnClickListener {
+        textViewCreateAccount.setOnClickListener {
             startActivity(Intent(this, CadastroActivity::class.java))
             finish()
         }

@@ -12,8 +12,8 @@ class CadastroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
 
-        cadastroBtnSave.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+        buttonSave.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
 

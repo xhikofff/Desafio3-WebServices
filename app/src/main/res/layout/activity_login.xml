@@ -8,13 +8,11 @@
     tools:context=".ui.LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/loginLayer"
+        android:id="@+id/loginOverlay"
         android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="150dp"
-        android:background="@drawable/shape_layer_account"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/shape_overlay_vermelho"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,23 +20,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textViewWelcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/welcome_to_the_marvel_hq_s"
+            android:paddingVertical="16dp"
+            android:text="@string/welcome"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/loginCard"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/loginLayer" />
+            app:layout_constraintTop_toTopOf="@+id/loginOverlay" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/loginCard"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -47,9 +46,9 @@
                 android:id="@+id/loginLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -61,7 +60,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/blue_3" />
+                        android:textColor="@color/gray_1"
+                        android:textSize="14sp"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -74,11 +74,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
-                        android:textColor="@color/blue_3" />
+                        android:textColor="@color/gray_1"
+                        android:textSize="14sp"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <CheckBox
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/red_2"
                     android:checked="true"
@@ -86,25 +87,25 @@
                     android:textColor="@color/gray_1" />
 
                 <Button
-                    android:id="@+id/loginBtnLogin"
+                    android:id="@+id/buttonLogin"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@color/red_3"
-                    android:text="@string/log_in"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_botao_vermelho"
+                    android:text="@string/login"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:layout_marginTop="32dp"
+                    android:padding="0dp"
+                    />
 
                 <TextView
-                    android:id="@+id/loginTvCreateAccount"
+                    android:id="@+id/textViewCreateAccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:gravity="center"
                     android:text="@string/create_account"
-                    android:textColor="@color/blue_2"
-                    android:textSize="16sp" />
+                    android:textColor="@color/gray_1"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

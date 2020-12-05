@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Desafio 3 - Web Services</string>
+    <string name="welcome">Welcome to the Marvel HQ\'S</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember</string>
+    <string name="login">Log in</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="HQ_num">#%1$d</string>
+    <string name="published"><b>Published:</b> 1%s</string>
+    <string name="price"><b>Price:</b> $ 1%s</string>
+    <string name="pages"><b>Pages:</b> 1%s</string>
 </resources>
