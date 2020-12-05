@@ -20,11 +20,12 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
                     "1",
                     "comic",
                     "true",
+                    454,
                     "issueNumber",
                     "aa25bbbc2439c9acce70e02378645e05",
                     "ce9c567fa8eaf4c1e27a9ef2a7cb9dc5",
-                    95,
-                    10,
+                    90,
+                    20,
                 )
 
                 val results = response.get("data").asJsonObject.get("results")

@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SplashScreen"
-    android:background="@drawable/spiderman">
-
+    android:background="@drawable/spiderman"
+    tools:context=".ui.SplashScreen">
 
     <ImageView
         android:id="@+id/imageViewSplashLogo"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="72dp"
         android:scaleType="fitEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

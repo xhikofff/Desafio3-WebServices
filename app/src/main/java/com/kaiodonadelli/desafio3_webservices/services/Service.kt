@@ -13,6 +13,7 @@ interface Repository {
         @Query("ts") ts: String,
         @Query("format") format: String,
         @Query("noVariants") noVariants: String,
+        @Query("series") series: Int,
         @Query("orderBy") orderBy: String,
         @Query("apikey") apikey: String,
         @Query("hash") hash: String,

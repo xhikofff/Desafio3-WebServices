@@ -24,6 +24,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/shape_quadro"
+        android:elevation="4dp"
         android:padding="2dp"
         android:scaleType="fitXY"
         android:src="@drawable/spiderman"
